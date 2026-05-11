@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aleq777">
+    <meta name="description" content="A program made for decoding error-codes of the G.A.D.S. microcontroller in Stormworks">
+    <title>Error Code Decoder</title>
+    <link type="text/css" rel="stylesheet" href="./Styles/style.css">
+    <script type="text/javascript" src="./Scripts/base.js"></script>
+    <script type="text/javascript" src="./Scripts/load.js"></script>
+    <script type="text/javascript" src="./Scripts/check.js"></script>
+</head>
+<body onload="Load();">
+    <header>
+        <h1>G.A.D.S. Error Code Decoder</h1>
+        <h3>
+            For GADS version:
+            <span>1.0.0</span>
+        </h3>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <label>
+                Error code:
+                <input id="code" type="number" min="0" max="255" step="1" value="0">
+            </label>
+            <button type="button" onclick="Check();">Check</button>
+            <span id="codeError">The error code should be between 0 and 255. Try again. If your error code is different, contact with Aleq777.</span>
+        </section>
+        <section>
+            <table id="output">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            Made by
+            <a>Aleq777</a>
+            &copy;2026.
+            Version
+            <span>1.0.0</span>
+        </p>
+    </footer>
+</body>
+</html>
